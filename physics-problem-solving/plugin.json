@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "physics-problem-solving",
+  "version": "1.0.0",
+  "description": "Student-facing college-level physics solutions using preserved 1D and 2D constant-acceleration kinematics and Newton laws workflows, with vector notation, symbolic algebra, units, precision, and accessible Canvas HTML on request.",
+  "author": {
+    "name": "O. Moussa"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Physics Problem Solving",
+        "shortDescription": "Step-by-step physics solutions",
+        "longDescription": "Solve 1D and 2D constant-acceleration kinematics in eight steps and Newton laws problems in four steps with labeled free-body diagrams. Select the skill from its physics scope, clarify essential missing data, and default to rendered equations. Preserve accessible Canvas HTML and MathJax output when requested. Includes representative test problems and expected results.",
+        "developerName": "O. Moussa",
+        "category": "Education",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "defaultPrompt": [
+          "Solve this physics problem step by step using the appropriate physics skill.",
+          "Solve this problem as an accessible Canvas-ready HTML snippet with MathJax delimiters.",
+          "Use the included representative test problems to review the physics solution workflows."
+        ]
+      }
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/omoussa/physics-problem-solving"
+}

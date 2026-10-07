@@ -1,0 +1,14 @@
+interface:
+  display_name: 2D Kinematics Solutions
+  short_description: Full 2D vector solutions in your eight-step format
+  default_prompt: Use $solve-2d-kinematics to provide a full solution to this two-dimensional
+    constant-acceleration problem in my preferred format.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
