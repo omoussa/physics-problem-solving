@@ -2,7 +2,7 @@
 
 College-level, student-facing physics solution skills by O. Moussa. Install a single skill or use the complete plugin when its installation has been verified.
 
-**Status:** Initial source preparation. Plugin registration and post-installation behavior are pending verification. No published release is available yet.
+**Status:** Current release ([v1.0.0](https://github.com/omoussa/physics-problem-solving/releases)) includes the individual skills listed below only. Plugin registration and post-installation behavior are pending verification.
 
 ## Included skills
 
