@@ -2,7 +2,7 @@
 
 ## Current status
 
-The source is prepared for a private repository owned by omoussa. GitHub creation and plugin registration are pending. The manifest currently records package version 1.0.0; this is not a published release tag.
+The source repository is available. Plugin registration and post-installation verification are pending.
 
 The individual skills are self-contained. The full plugin package has not yet been accepted by Plugin Creator or verified after installation. The initial registration attempts returned: "Plugin must include a skill, MCP server, or connected app." A portable manifest, compatibility manifest, and archive layout changes did not resolve that error.
 
