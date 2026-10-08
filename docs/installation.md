@@ -1,5 +1,77 @@
 # Installation
 
+## Available release
+
+[Physics Problem Solving v1.0.0](https://github.com/omoussa/physics-problem-solving/releases/tag/v1.0.0) provides three standalone skills. Install any combination of them. The complete plugin is not included in this release.
+
+## Download a skill
+
+Use the individual ZIP links below, which are also linked in the release notes.
+
+| Skill | Scope | v1.0.0 download |
+| --- | --- | --- |
+| `solve-1d-kinematics` | Constant-acceleration motion along one fixed spatial dimension, including vertical free fall. | [solve-1d-kinematics-v1.0.0.zip](https://github.com/omoussa/physics-problem-solving/releases/download/v1.0.0/solve-1d-kinematics-v1.0.0.zip) |
+| `solve-2d-kinematics` | Constant-acceleration motion in a plane, including projectile motion. | [solve-2d-kinematics-v1.0.0.zip](https://github.com/omoussa/physics-problem-solving/releases/download/v1.0.0/solve-2d-kinematics-v1.0.0.zip) |
+| `solve-newton-laws` | Translational equilibrium and dynamics, including friction, inclines, connected objects, ideal pulleys, and circular motion. | [solve-newton-laws-v1.0.0.zip](https://github.com/omoussa/physics-problem-solving/releases/download/v1.0.0/solve-newton-laws-v1.0.0.zip) |
+
+GitHub's automatically generated **Source code** archives contain the entire repository. The links above provide the individual skill packages.
+
+## Install in local Codex
+
+1. Download a skill ZIP and extract it.
+2. Copy the complete skill folder into one of the locations below, preserving `SKILL.md` and all supporting files.
+3. Keep the installed folder name unversioned, such as `solve-1d-kinematics`. Its `SKILL.md` must sit directly inside that folder.
+4. In Codex CLI or the IDE extension, select the skill with `/skills` or mention it by name: `$solve-1d-kinematics`, `$solve-2d-kinematics`, or `$solve-newton-laws`.
+
+| Installation scope | Copy the skill folder into |
+| --- | --- |
+| Your user account | `~/.agents/skills/` |
+| One project | `<project-root>/.agents/skills/` |
+
+For example, a user installation should contain `~/.agents/skills/solve-1d-kinematics/SKILL.md`. The version belongs in the ZIP filename; the installed folder retains the skill's name.
+
+### Alternative: install from GitHub
+
+When Skill Installer is available, ask it to install the skill from its versioned repository path. For example:
+
+```text
+$skill-installer Install the skill from https://github.com/omoussa/physics-problem-solving/tree/v1.0.0/skills/solve-1d-kinematics
+```
+
+Replace `solve-1d-kinematics` with the desired skill name. The `v1.0.0` tag selects this release's files.
+
+## environments with skill installation support
+
+Where a standalone skill-import workflow is available, provide the complete ZIP and request installation with its instructions and supporting files preserved unchanged. Confirm that the skill appears in the environment's Skills list before use; select it with `@` where supported.
+
+Availability varies by product and account. Copying a folder into a local Codex directory installs it in that local environment; uploading a ZIP to a chat alone does not confirm installation.
+
+## Verify and use the skill
+
+Try the representative problems in the [v1.0.0 tests folder](https://github.com/omoussa/physics-problem-solving/tree/v1.0.0/tests). Review the solution structure and physics, including:
+
+- Eight numbered steps for either kinematics skill; four numbered main steps for Newton's laws.
+- Explicit coordinate systems, vector notation, and unit vectors.
+- Symbolic algebra before numerical substitution, followed by units and appropriate precision.
+
+Solutions default to student-facing college-level explanations with rendered equations. For Canvas output, request an accessible Canvas-ready HTML snippet using MathJax delimiters.
+
+## Updating an installed skill
+
+Save any local customizations, then replace the complete installed skill folder with the folder from the newer ZIP. Use one installed copy of each skill name in your active scope, and repeat a representative problem after updating.
+
+## Runtime requirements
+
+- Worked solutions use the host's reasoning and equation-rendering capabilities.
+- Newton's laws diagrams require Python 3 and Matplotlib in an execution-capable environment. The skill includes a fallback when diagrams cannot be rendered.
+- Canvas HTML uses `\( ... \)` and `\[ ... \]` delimiters and the LMS's available math renderer. Diagrams require LMS-hosted image references or explicit placeholders.
+- These workflows require no external account connection or MCP server.
+
+## Full-plugin status
+
+Full-plugin registration and post-installation verification remain pending. A confirmed plugin installation link and instructions will be added when available. The standalone skills can be installed independently using the methods above.
+
+
 ## Current status
 
 The source repository is available. Plugin registration and post-installation verification are pending.
