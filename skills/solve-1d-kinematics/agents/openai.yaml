@@ -1,0 +1,14 @@
+interface:
+  display_name: 1D Kinematics Solutions
+  short_description: Full vector solutions in your eight-step teaching format
+  default_prompt: Use $solve-1d-kinematics to provide a full solution to this constant-acceleration
+    problem in my preferred format.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
